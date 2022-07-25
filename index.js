@@ -1,79 +1,87 @@
 const initialCards = [{
-    name: "Valle de Yosemite",
-    link: "https://code.s3.yandex.net/web-code/yosemite.jpg"
-},
-{
-    name: "Lago Louise",
-    link: "https://code.s3.yandex.net/web-code/lake-louise.jpg"
-},
-{
-    name: "Montañas Calvas",
-    link: "https://code.s3.yandex.net/web-code/bald-mountains.jpg"
-},
-{
-    name: "Latemar",
-    link: "https://code.s3.yandex.net/web-code/latemar.jpg"
-},
-{
-    name: "Parque Nacional de la Vanoise",
-    link: "https://code.s3.yandex.net/web-code/vanoise.jpg"
-},
-{
-    name: "Lago di Braies",
-    link: "https://code.s3.yandex.net/web-code/lago.jpg"
-}
+        name: "Valle de Yosemite",
+        link: "https://code.s3.yandex.net/web-code/yosemite.jpg"
+    },
+    {
+        name: "Lago Louise",
+        link: "https://code.s3.yandex.net/web-code/lake-louise.jpg"
+    },
+    {
+        name: "Montañas Calvas",
+        link: "https://code.s3.yandex.net/web-code/bald-mountains.jpg"
+    },
+    {
+        name: "Latemar",
+        link: "https://code.s3.yandex.net/web-code/latemar.jpg"
+    },
+    {
+        name: "Parque Nacional de la Vanoise",
+        link: "https://code.s3.yandex.net/web-code/vanoise.jpg"
+    },
+    {
+        name: "Lago di Braies",
+        link: "https://code.s3.yandex.net/web-code/lago.jpg"
+    }
 ];
 
 const cardTemplate = document.querySelector("#container").textContent;
 const cardsContainer = document.querySelector(".elements__container");
 
-const addElement = function() {
-initialCards.forEach(function(item) {
-    const cardElement = cardTemplate.querySelector(".elements__container").cloneNode(true);
+const addElement = function () {
+    initialCards.forEach(function (item) {
+        const cardElement = cardTemplate.querySelector(".elements__container").cloneNode(true);
 
-    cardElement.querySelector(".elements__name").textContent = item.name;
-    cardElement.querySelector(".elements__img").src = item.link;
-    cardElement.querySelector(".elements__img").alt = item.name;
-});
+        cardElement.querySelector(".elements__name").textContent = item.name;
+        cardElement.querySelector(".elements__img").src = item.link;
+        cardElement.querySelector(".elements__img").alt = item.name;
+    });
 };
 
 
-let formElement = document.querySelector('.popup__form');
-let formButton = document.querySelector('.popup__button-form');
-let profileButton = document.querySelector('.profile__btn');
+const formElement = document.querySelector('.popup__form');
+const formButton = document.querySelector('.popup__button-form');
+const profileButton = document.querySelector('.profile__btn');
 
 
 function handleProfileFormSubmit(evt) {
 
-evt.preventDefault();
+        evt.preventDefault();
 
-const profile__name = document.querySelector('.profile__name');
-const profile__description = document.querySelector('.profile__description');
+    const profileName = document.querySelector('.profile__name');
+    const profileDescription = document.querySelector('.profile__description');
 
-profile__name.textContent = evt.target.form.elements.popup__name.value;
-profile__description.textContent = evt.target.form.elements.popup__about.value;
+    profileName.textContent = evt.target.form.elements.popup__name.value;
+    profileDescription.textContent = evt.target.form.elements.popup__about.value;
 
 
-setTimeout(closeForm, 175)
+    setTimeout(closeForm, 175)
 
 }
 
 
 function openForm() {
-document.querySelector(".popup").style.display = "block";
+
+    document.querySelector(".popup").style.display = "block";
+
 }
 
 function closeForm() {
-document.querySelector(".popup").style.display = "none";
+
+    document.querySelector(".popup").style.display = "none";
+
 }
 
 
 function openFormImages() {
-document.querySelector(".form").style.display = "block";
+
+    document.querySelector(".form").style.display = "block";
+
 }
 
 function closeFormImages() {
-document.querySelector(".form").style.display = "none";
+
+    document.querySelector(".form").style.display = "none";
+    
 }
 
 document.querySelector('.profile__button').addEventListener("click", openForm)
