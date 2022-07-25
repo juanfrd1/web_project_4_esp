@@ -32,6 +32,7 @@
     font-size: 42px;
     line-height: 48px;
     font-weight: 500;
+    color: #fff;
 }
 
 .profile__description {
@@ -39,6 +40,7 @@
     padding-top: 13px;
     line-height: 24px;
     font-weight: 400;
+    color: #fff;
 }
 
 .profile__button {
@@ -58,4 +60,8 @@
     width: 25%;
     height: 50px;
     border: 2px solid #fff;
+}
+
+.profile__icon:hover{
+    background-color: #545454;
 }
