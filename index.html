@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,118 +10,125 @@
     <link rel="stylesheet" href="./blocks/vendor/normalize.css">
     <title>Alrededor de Ecuador</title>
 </head>
+
 <body>
+
     <section class="section">
-    <header class="header">
-        <h1 class="header__title">A round<sup class="header__title-add">Ecuador</sup></h1>
-    </header>
-    <section class="profile">
-        <div class="profile__section">
-            <img class="profile__img" src="./blocks/images/profile.jpg" alt="my_picture">
-        <div class="profile__details">
-            <h2 class="profile__name">Juan Fernando Davila</h2>
-            <p class="profile__description">Web Development by Practicum</p>
-        </div>
-        <button class="profile__button">
-            <img class="profile__icon" src="./blocks/images/profile__pencil.png" alt="button__img">
-        </button>
-        </div>
-        <button class="profile__btn">
-            <img class="profile__btn-back" src="./blocks/images/profile__plus.png" alt="button">
-        </button>
+        <header class="header">
+            <h1 class="header__title">A round<sup class="header__title-add">Ecuador</sup></h1>
+        </header>
+        <section class="profile">
+            <div class="profile__section">
+                <img class="profile__img" src="./blocks/images/profile.jpg" alt="my_picture">
+                <div class="profile__details">
+                    <h2 class="profile__name">Juan Fernando Davila</h2>
+                    <p class="profile__description">Web Development by Practicum</p>
+                </div>
+                <button class="profile__button">
+                    <img class="profile__icon" src="./blocks/images/profile__pencil.png" alt="button__img">
+                </button>
+            </div>
+            <button class="profile__btn">
+                <img class="profile__btn-back" src="./blocks/images/profile__plus.png" alt="button">
+            </button>
+        </section>
+        <section class="elements">
+            <div class="elements__container">
+                <img class="elements__img" src="./blocks/images/element_photo-01.jpg" alt="cascada">
+                <div class="elements__description">
+                    <h3 class="elements__name">Cascada de Baños</h3>
+                    <button class="elements__button">
+                        <img class="elements__icon" src="./blocks/images/heart.png" alt="">
+                    </button>
+                </div>
+            </div>
+            <div class="elements__container">
+                <img class="elements__img" src="./blocks/images/element_photo-02.jpg" alt="cascada">
+                <div class="elements__description">
+                    <h3 class="elements__name">Iglesia en Patate</h3>
+                    <button class="elements__button">
+                        <img class="elements__icon" src="./blocks/images/heart.png" alt="">
+                    </button>
+                </div>
+            </div>
+            <div class="elements__container">
+                <img class="elements__img" src="./blocks/images/element_photo-03.jpg" alt="cascada">
+                <div class="elements__description">
+                    <h3 class="elements__name">Volcán Cotopaxi</h3>
+                    <button class="elements__button">
+                        <img class="elements__icon" src="./blocks/images/heart.png" alt="">
+                    </button>
+                </div>
+            </div>
+            <div class="elements__container">
+                <img class="elements__img" src="./blocks/images/element_photo-04.jpg" alt="cascada">
+                <div class="elements__description">
+                    <h3 class="elements__name">Laguna Quilotoa</h3>
+                    <button class="elements__button">
+                        <img class="elements__icon" src="./blocks/images/heart.png" alt="">
+                    </button>
+                </div>
+            </div>
+            <div class="elements__container">
+                <img class="elements__img" src="./blocks/images/element_photo-05.jpg" alt="cascada">
+                <div class="elements__description">
+                    <h3 class="elements__name">Parque Cajas</h3>
+                    <button class="elements__button">
+                        <img class="elements__icon" src="./blocks/images/heart.png" alt="">
+                    </button>
+                </div>
+            </div>
+            <div class="elements__container">
+                <img class="elements__img" src="./blocks/images/element_photo-06.jpg" alt="cascada">
+                <div class="elements__description">
+                    <h3 class="elements__name">Islas Galápagos</h3>
+                    <button class="elements__button">
+                        <img class="elements__icon" src="./blocks/images/heart.png" alt="">
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="popup popup-open">
+            <button class="popup__button-close"><img src="./blocks/images/close_icon.png" alt="close-img"></button>
+            <div class="popup__container">
+                <h4 class="popup__title">Editar perfil</h4>
+                <form class="popup__form" action="form">
+                    <input class="popup__name" id="popup__name" type="text" placeholder="Escribe tu nombre">
+                    <input class="popup__about" id="popup__about" type="text" placeholder="Descripcion">
+                    <button class="popup__button-form">Guardar</button>
+                </form>
+            </div>
+        </section>
+        <section class="form">
+            <button class="form__button"><img src="./blocks/images/close_icon.png" alt="close-img"></button>
+            <div class="form__container">
+                <h4 class="form__title">Nuevo lugar</h4>
+                <form class="form__form" action="form">
+                    <input class="form__name" id="form__name" type="text" placeholder="Titulo">
+                    <input class="form__about" id="form__about" type="text" placeholder="Enlace de la imagen">
+                    <button class="form__button-form">Guardar</button>
+                </form>
+            </div>
+        </section>
+        <footer class="footer">
+            <p class="footer__copyright">Juan Fernando Davila © 2022</p>
+        </footer>
     </section>
-    <section class="elements">
+
+    <template class="elements" id="container">
         <div class="elements__container">
-            <img class="elements__img" src="./blocks/images/element_photo-01.jpg" alt="cascada">
+            <img type="button" src="./blocks/images/elements_trash.png" alt="trash" class="elements__trash">
+            <img src="" alt="" class="elements__img">
             <div class="elements__description">
-                <h3 class="elements__name">Cascada de Baños</h3>
-                <button class="elements__button">
-                    <img class="elements__icon" src="./blocks/images/heart.png" alt="">
-                </button>
+                <h3 class="elements__name"></h3>
+                <button class="elements__button"><img class="elements__icon" src="./blocks/images/heart.png"
+                        alt="heart"></button>
             </div>
         </div>
-        <div class="elements__container">
-            <img class="elements__img" src="./blocks/images/element_photo-02.jpg" alt="cascada">
-            <div class="elements__description">
-                <h3 class="elements__name">Iglesia en Patate</h3>
-                <button class="elements__button">
-                    <img class="elements__icon" src="./blocks/images/heart.png" alt="">
-                </button>
-            </div>
-        </div>
-        <div class="elements__container">
-            <img class="elements__img" src="./blocks/images/element_photo-03.jpg" alt="cascada">
-            <div class="elements__description">
-                <h3 class="elements__name">Volcán Cotopaxi</h3>
-                <button class="elements__button">
-                    <img class="elements__icon" src="./blocks/images/heart.png" alt="">
-                </button>
-            </div>
-        </div>
-        <div class="elements__container">
-            <img class="elements__img" src="./blocks/images/element_photo-04.jpg" alt="cascada">
-            <div class="elements__description">
-                <h3 class="elements__name">Laguna Quilotoa</h3>
-                <button class="elements__button">
-                    <img class="elements__icon" src="./blocks/images/heart.png" alt="">
-                </button>
-            </div>
-        </div>
-        <div class="elements__container">
-            <img class="elements__img" src="./blocks/images/element_photo-05.jpg" alt="cascada">
-            <div class="elements__description">
-                <h3 class="elements__name">Parque Cajas</h3>
-                <button class="elements__button">
-                    <img class="elements__icon" src="./blocks/images/heart.png" alt="">
-                </button>
-            </div>
-        </div>
-        <div class="elements__container">
-            <img class="elements__img" src="./blocks/images/element_photo-06.jpg" alt="cascada">
-            <div class="elements__description">
-                <h3 class="elements__name">Islas Galápagos</h3>
-                <button class="elements__button">
-                    <img class="elements__icon" src="./blocks/images/heart.png" alt="">
-                </button>
-            </div>
-        </div>
-    </section>
-    <section class="popup popup-open">
-        <button class="popup__button-close"><img src="./blocks/images/close_icon.png" alt="close-img"></button>
-        <div class="popup__container">
-            <h4 class="popup__title">Editar perfil</h4>
-            <form class="popup__form" action="form">
-                <input class="popup__name" id="popup__name" type="text" placeholder="Escribe tu nombre">
-                <input class="popup__about" id="popup__about" type="text" placeholder="Descripcion">
-                <button class="popup__button-form">Guardar</button>
-            </form>
-        </div>
-    </section>
-    <section class="form">
-        <button class="form__button"><img src="./blocks/images/close_icon.png" alt="close-img"></button>
-        <div class="form__container">
-            <h4 class="form__title">Nuevo lugar</h4>
-            <form class="form__form" action="form">
-                <input class="form__name" id="form__name" type="text" placeholder="Titulo">
-                <input class="form__about" id="form__about" type="text" placeholder="Enlace de la imagen">
-                <button class="form__button-form">Guardar</button>
-            </form>
-        </div>
-    </section>
-    <footer class="footer">
-        <p class="footer__copyright">Juan Fernando Davila © 2022</p>
-    </footer>
-</section>
-<template class="elements" id="container">
-    <div class="elements__container">
-        <img type="button" src="./blocks/images/elements_trash.png" alt="trash" class="elements__trash">
-        <img src="" alt="" class="elements__img">
-        <div class="elements__description">
-            <h3 class="elements__name"></h3>
-            <button class="elements__button"><img class="elements__icon" src="./blocks/images/heart.png" alt="heart"></button>
-        </div>
-    </div>
-</template>
-<script src="./index.js"></script>
+    </template>
+    
+    <script src="./index.js"></script>
+
 </body>
+
 </html>
