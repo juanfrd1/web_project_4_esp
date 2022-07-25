@@ -12,8 +12,7 @@
 <body>
     <section class="section">
     <header class="header">
-        <h1 class="header__title">A round</h1>
-        <p class="header__title-add">The Ec.</p>
+        <h1 class="header__title">A round<sup class="header__title-add">Ecuador</sup></h1>
     </header>
     <section class="profile">
         <div class="profile__section">
@@ -34,7 +33,7 @@
         <div class="elements__container">
             <img class="elements__img" src="./blocks/images/element_photo-01.jpg" alt="cascada">
             <div class="elements__description">
-                <h3 class="elements__name">Cascada Baños de Agua Santa</h3>
+                <h3 class="elements__name">Cascada de Baños</h3>
                 <button class="elements__button">
                     <img class="elements__icon" src="./blocks/images/heart.png" alt="">
                 </button>
@@ -43,7 +42,7 @@
         <div class="elements__container">
             <img class="elements__img" src="./blocks/images/element_photo-02.jpg" alt="cascada">
             <div class="elements__description">
-                <h3 class="elements__name">Iglesia en Patate, Tungurahua</h3>
+                <h3 class="elements__name">Iglesia en Patate</h3>
                 <button class="elements__button">
                     <img class="elements__icon" src="./blocks/images/heart.png" alt="">
                 </button>
@@ -70,7 +69,7 @@
         <div class="elements__container">
             <img class="elements__img" src="./blocks/images/element_photo-05.jpg" alt="cascada">
             <div class="elements__description">
-                <h3 class="elements__name">Parque Nacional Cajas</h3>
+                <h3 class="elements__name">Parque Cajas</h3>
                 <button class="elements__button">
                     <img class="elements__icon" src="./blocks/images/heart.png" alt="">
                 </button>
@@ -112,5 +111,16 @@
         <p class="footer__copyright">Juan Fernando Davila © 2022</p>
     </footer>
 </section>
+<template class="elements" id="container">
+    <div class="elements__container">
+        <img type="button" src="./blocks/images/elements_trash.png" alt="trash" class="elements__trash">
+        <img src="" alt="" class="elements__img">
+        <div class="elements__description">
+            <h3 class="elements__name"></h3>
+            <button class="elements__button"><img class="elements__icon" src="./blocks/images/heart.png" alt="heart"></button>
+        </div>
+    </div>
+</template>
+<script src="./index.js"></script>
 </body>
 </html>

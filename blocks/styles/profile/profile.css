@@ -5,7 +5,7 @@
     justify-content: space-between;
 }
 
-.profile__container {
+.profile__section {
     display: flex;
     margin: 0;
     align-items: center;
