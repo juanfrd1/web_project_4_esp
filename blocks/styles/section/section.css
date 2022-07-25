@@ -1,0 +1,9 @@
+.section {
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    width: min(90%, 880px);
+    margin: 0 auto;
+}
