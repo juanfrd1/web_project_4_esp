@@ -14,3 +14,7 @@
 A la hora de trabajar, debes optar por exportar las imágenes directamente desde Figma; te recomendamos hacerlo para practicar más. No olvides optimizarlas [aquí](https://tinypng.com/), para que tu proyecto cargue más rápido. 
 
 ¡Esperamos que te diviertas con JavaScript!
+
+Un paseo para conocer un poco de las grandes maravillas y paisajes que ofrece Ecuador por medio de cards. Puedes cargar nuevos lugares fantásticos de Ecuador... ah y pronto podrás salvar tus cards preferidas. No es grandioso?
+[Enlace](https://juanfrd1.github.io/web_project_4_esp/)
+
