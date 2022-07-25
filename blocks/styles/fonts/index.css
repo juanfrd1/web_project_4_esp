@@ -6,4 +6,5 @@
 @import url(../popup/popup.css);
 @import url(../form/form.css);
 @import url(../footer/footer.css);
+@import url(/blocks/vendor/normalize.css);
 
