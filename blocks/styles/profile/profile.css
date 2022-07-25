@@ -66,6 +66,14 @@
     background-color: #545454;
 }
 
+.profile__icon:hover {
+    background-color: transparent;
+}
+
+.profile__btn {
+    background-color: transparent;
+}
+
 @media screen and (max-width: 650px) {
     .profile {
         display: flex;
