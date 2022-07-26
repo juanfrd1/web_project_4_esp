@@ -54,25 +54,36 @@
 .profile__icon {
     width: 13px;
     height: 13px;
+    background-color: transparent;
 }
 
 .profile__btn {
     width: 25%;
     height: 50px;
     border: 2px solid #fff;
+    background-color: transparent;
 }
 
 .profile__icon:hover{
-    background-color: #545454;
+    background-color: #ffffff;
+    opacity: 0.6;
+    transform: rotate(45deg);
 }
 
 .profile__icon:hover {
     background-color: transparent;
 }
 
-.profile__btn {
+.profile__btn-back:hover {
+    background-color: #ffffff;
+    opacity: 0.6;
+    transform: rotate(45deg); 
+}
+
+.profile__btn-back:hover {
     background-color: transparent;
 }
+
 
 @media screen and (max-width: 650px) {
     .profile {

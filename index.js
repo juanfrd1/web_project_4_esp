@@ -45,7 +45,7 @@ const profileButton = document.querySelector('.profile__btn');
 
 function handleProfileFormSubmit(evt) {
 
-        evt.preventDefault();
+    evt.preventDefault();
 
     const profileName = document.querySelector('.profile__name');
     const profileDescription = document.querySelector('.profile__description');
@@ -81,7 +81,7 @@ function openFormImages() {
 function closeFormImages() {
 
     document.querySelector(".form").style.display = "none";
-    
+
 }
 
 document.querySelector('.profile__button').addEventListener("click", openForm)
